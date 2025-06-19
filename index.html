@@ -13,11 +13,6 @@
         background: #f5f5f5;
       }
 
-      #defaultCanvas0 {
-        display: block;
-        margin-top: 30px;
-      }
-
       .description {
         max-width: 800px;
         text-align: center;
@@ -26,7 +21,7 @@
       }
 
       .description h1 {
-        font-size: 3em; /* Make the title bigger */
+        font-size: 3em;
         margin-bottom: 0.3em;
       }
 
@@ -37,10 +32,13 @@
         font-size: 1.15em;
         color: #333;
       }
+
+      canvas {
+        display: block;
+        margin-top: 30px;
+      }
     </style>
-    <!-- Load p5.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-    <!-- Load your sketch -->
     <script src="sketch.js" defer></script>
   </head>
   <body>
@@ -51,7 +49,9 @@
         Adjust the timeline, stack floors, and renovate the skyline to explore how architecture and policy intertwine.
       </p>
     </div>
-    <!-- The p5.js canvas will be inserted here -->
+
+    <!-- p5.js injects the canvas here automatically -->
+
     <div class="below-sketch">
       Explore the sketch above! This interactive visualization lets you manipulate the cityscape and understand the relationship between policy and architecture.<br>
       Try changing the timeline or adding new floors to see dynamic effects.

@@ -7,54 +7,65 @@
       body {
         margin: 0;
         font-family: sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         background: #f5f5f5;
       }
 
-      .description {
-        max-width: 800px;
-        text-align: center;
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px;
+        flex-wrap: wrap;
+      }
+
+      #sketch-holder canvas {
+        display: block;
+        max-width: 100%;
+      }
+
+      .info-panel {
+        max-width: 400px;
         padding: 20px;
         color: #222;
       }
 
-      .description h1 {
+      .info-panel h1 {
         font-size: 3em;
         margin-bottom: 0.3em;
       }
 
-      .below-sketch {
-        max-width: 700px;
-        text-align: center;
-        margin-top: 40px;
-        font-size: 1.15em;
-        color: #333;
+      .info-panel p {
+        font-size: 1.1em;
+        margin-top: 1em;
+        line-height: 1.6em;
       }
 
-      canvas {
-        display: block;
-        margin-top: 30px;
+      @media screen and (max-width: 900px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
     <script src="sketch.js" defer></script>
   </head>
-<body>
-  <div class="description">
-    <h1>Spatial Trades</h1>
-    <p>
-      Welcome to Spatial Trades—a visual journey through economic cycles and urban development.
-      Adjust the timeline, stack floors, and renovate the skyline to explore how architecture and policy intertwine.
-    </p>
-  </div>
-  <div id="sketch-holder"></div>
-
-  <div class="below-sketch">
-    Explore the sketch above! This interactive visualization lets you manipulate the cityscape and understand the relationship between policy and architecture.<br>
-    Try changing the timeline or adding new floors to see dynamic effects.
-  </div>
-</body>
-
+  <body>
+    <div class="container">
+      <div id="sketch-holder"></div>
+      <div class="info-panel">
+        <h1>Spatial Trades</h1>
+        <p>
+          Welcome to <strong>Spatial Trades</strong>—a visual journey through economic cycles and urban development.
+          Drag the timeline, stack floors, and give buildings a fresh look to explore how policy shapes architecture.
+        </p>
+        <p>
+          This sketch invites you to reflect on the built environment during boom and crisis periods.
+          Try adding floors during economic prosperity or experimenting with renovation effects.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
+

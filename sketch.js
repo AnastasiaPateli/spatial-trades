@@ -87,7 +87,7 @@ class FloorBlock {
 }
 
 function setup() {
-  let canvas = createCanvas(1000, 800);
+  let canvas = createCanvas(800, 600);
   canvas.parent("sketch-holder");
   offY = (4 * height) / 5;
   ballX = map(2000, 2000, 2025, 10, width - 10);

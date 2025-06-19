@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <title>Spatial Trades</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #f5f5f5;
+      }
 
+      #defaultCanvas0 {
+        display: block;
+        margin-top: 30px;
+      }
+
+      .description {
+        max-width: 800px;
+        text-align: center;
+        padding: 20px;
+        font-size: 1.1em;
+        color: #222;
+      }
+    </style>
+    <!-- Load p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <!-- Load your sketch -->
+    <script src="sketch.js" defer></script>
   </head>
   <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
+    <div class="description">
+      <h1>Spatial Trades</h1>
+      <p>
+        Welcome to Spatial Trades—a visual journey through economic cycles and urban development.
+        Adjust the timeline, stack floors, and renovate the skyline to explore how architecture and policy intertwine.
+      </p>
+    </div>
   </body>
 </html>
